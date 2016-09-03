@@ -10,7 +10,7 @@ import java.util.Collections;
  *  returns their name and a
  *  modified string
  *
- * @author Bob
+ * @author Devan Williams
  * @version 1.1
  */
 public class Person2 {
@@ -34,14 +34,14 @@ public class Person2 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private static String calc(String input) {
+	private String calc(String input) {
         List<String> letters = Arrays.asList(input.split(""));
         Collections.shuffle(letters);
         String shuffled = "";
         for (String letter : letters) {
             shuffled += letter;
         }
-        return shuffled;
+        return toString(shuffled);
     }
 
 
