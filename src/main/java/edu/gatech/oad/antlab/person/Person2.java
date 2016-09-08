@@ -41,7 +41,7 @@ public class Person2 {
         for (String letter : letters) {
             shuffled += letter;
         }
-        return toString(shuffled);
+        return shuffled;
     }
 
 
