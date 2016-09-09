@@ -1,4 +1,14 @@
+ext.sourceCompatibility = 1.8
+ext.targetCompatibility = 1.8
+version = '1.0.0'
+
 apply plugin: 'java'
+
+repositories {
+	flatDir {
+		dirs 'lib'
+	}
+}
 
 dependencies {
 	compile name: 'resources' 
