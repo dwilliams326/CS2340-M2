@@ -16,8 +16,7 @@ jar {
 
 
     manifest {
-        attributes
-                   'Class-Path': '../../lib/resources.jar',
+        attributes 'Class-Path': '../../lib/resources.jar',
                    'Main-Class': 'edu/gatech/oad/antlab/pkg1/AntLabMain'
 
     }
