@@ -1,8 +1,6 @@
-ext.sourceCompatibility = 1.8
-ext.targetCompatibility = 1.8
-version = '1.0.0'
-
 apply plugin: 'java'
+
+defaultTasks 'jar'
 
 repositories {
 	flatDir {
@@ -11,7 +9,7 @@ repositories {
 }
 
 dependencies {
-	compile name: 'resources' 
+	compile name: 'resources'
 }
 
 repositories {
@@ -20,7 +18,7 @@ repositories {
 	}
 }
 
-jar { 
+jar {
 	manifest {
 		attributes ('Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 'Class-Path' : '../../lib/resources.jar')
 	}
