@@ -7,17 +7,23 @@ defaultTasks 'jar'
 apply plugin: 'java'
 
 dependencies {
-    compile files('lib/resources.jar')
+    compile name: 'resources'
 }
 
-
+repositories {
+        flatDir {
+                dirs 'lib'
+        }
+}
 
 jar {
 
 
-    manifest {
-        attributes 'Class-Path': '../../lib/resources.jar',
-                   'Main-Class': 'edu/gatech/oad/antlab/pkg1/AntLabMain'
+    manifest {attributes 'Implementation-Title': 'M2-build',
+                         'Implementation-Version': version,
+                         'Main-Class': 'edu/gatech/oad/antlab/pkg1/AntLabMain',
+                         'Class-Path': '../../lib/resources.jar'
+                         
 
     }
 }
