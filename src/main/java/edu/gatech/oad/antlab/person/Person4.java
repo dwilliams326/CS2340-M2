@@ -31,12 +31,15 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
+      return "";
+      /*
       for(int i = 0; i < input.length; i++)
       {
         String temp = input.substring(i, i + 1);
         char newChar = temp.charAt(0);
         String calc += newChar.toString();
       }
+      */
     }
     
     /**
